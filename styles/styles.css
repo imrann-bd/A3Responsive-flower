@@ -109,15 +109,16 @@ img {
     text-align: center;
 }
 
-.plants-title {
+.plants-title,
+.lover-title {
     font-size: 3.12rem;
     font-weight: bold;
     margin-bottom: 16px;
 }
 
-/* card styles */
-.card-section {}
 
+
+/* card styles */
 .card-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -152,6 +153,39 @@ img {
 
 }
 
+/* flower and lover section styles */
+.flower-lover-section {
+    margin: 120px auto;
+}
+
+.flower-lover-section-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lvoer-section-left {
+    
+}
+
+.lvoer-section-right {
+    margin: 38px 0px;
+    
+}
+
+.lover-list li {
+    margin: 20px 0px;
+}
+.lover-img{
+   
+}
+
+.lover-badge{
+    width: 250px;
+    position: relative;
+    top: -700px;
+    left: 440px;
+    
+}
 /* Resposive For Mobile */
 @media screen and (max-width: 576px) {
     .navbar {
@@ -201,9 +235,9 @@ img {
     }
 
     .our-plants {
-        padding: 0px 151px;
+        padding: 0px 28px;
         margin-top: 10px 0px;
-      
+
     }
 
     .plants-des {
@@ -216,5 +250,28 @@ img {
         grid-template-columns: repeat(2, 1fr);
         padding: 0px 15px;
     }
-
+/* flower and love  */
+.flower-lover-section-container {
+    flex-direction: column;
+}
+.badge {
+    display: none;
+}
+.lvoer-section-left img{
+    width: 100%;
+}
+.flower-lover-section {
+    margin: 0;
+}
+.flower-lover-section-container{
+    margin: 40px 17px;
+}
+.lover-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.lvoer-section-right {
+    margin: 0px 38px;
+}
 }
