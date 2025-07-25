@@ -463,19 +463,14 @@ img {
         font-size: 20px;
     }
     .from-newsletter input[type="text"]{
-    padding: 15px 20px;
-    width: 70%;
-    border: none;
-    outline: none;
+    padding: 10px 5px;
+    width: 75%;
+    
 }
 .from-newsletter input[type="submit"]{
-    padding: 15px 20px;
-    width: 20%;
+    padding: 10px 5px;
+    width: 25%;
     margin-left: -5px;
-    background-color: #E95A08;
-    outline: none;
-    border: none;
-    color: #fff;
-    font-weight: 500;
+    
 }
 }
