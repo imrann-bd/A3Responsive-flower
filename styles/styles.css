@@ -163,7 +163,9 @@ img {
     justify-content: space-between;
 }
 
-.lvoer-section-left {}
+.lvoer-section-left {
+    position: relative;
+}
 
 .lvoer-section-right {
     margin: 38px 0px;
@@ -174,13 +176,18 @@ img {
     margin: 20px 0px;
 }
 
-.lover-img {}
+.lover-img {
+    z-index: -1;
+}
 
 .lover-badge {
     width: 250px;
-    position: relative;
-    top: -720px;
-    left: 400px;
+    position: absolute;
+    right: -130px;
+    top: -90px;
+    /* bottom: -1450px; */
+    /* left: 450px; */
+    z-index: 111;
 
 }
 
@@ -200,6 +207,7 @@ img {
 
 
 /* deal card*/
+
 .deal-card-section {
     margin-bottom: 120px;
 }
