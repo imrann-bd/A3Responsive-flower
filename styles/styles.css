@@ -332,14 +332,39 @@ img {
 }
 
 /* footer */
-
+.footer {
+    padding: 50px 0px;
+}
 .footer-container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+.footer-menu {
+
+}
+.footer-item {
+    list-style: none;
+}
+.footer-link {
+
+}
+.footer-links {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.5);
+    margin-top: 15px;
+    display: block;
+}
+.footer-icon {
+    display: flex;
+    margin-top: -100px;
+    display: inline-block;
+    align-items: center;
+}
+.fiocn  {
+    margin: 0px 10px;
     
 }
-
-
 
 
 /* Resposive For Mobile */
@@ -464,13 +489,33 @@ img {
     }
     .from-newsletter input[type="text"]{
     padding: 10px 5px;
-    width: 75%;
+    width: 70%;
     
 }
 .from-newsletter input[type="submit"]{
     padding: 10px 5px;
-    width: 25%;
+    width: 30%;
     margin-left: -5px;
     
+}
+/* footer */
+.footer{
+    width: 100%;
+    padding: 40px;
+}
+.footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+}
+.footer-icon {
+    display: flex;
+    margin-top: 20px;
+    margin-left: -15px;
+    
+   
+}
+.footer-links {
+     margin-top: 32px;
+     margin-bottom: 20px;
 }
 }
