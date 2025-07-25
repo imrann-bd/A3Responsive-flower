@@ -295,7 +295,7 @@ img {
 }
 /* newsletter section */
 .newsletter-section {
-    margin-bottom: 120px;
+    
 }
 .news-letter {
     background-image: linear-gradient(rgba(7, 51, 79, 0.3)), url(../assets/news-letter-bg.png);
@@ -330,6 +330,18 @@ img {
     color: #fff;
     font-weight: 500;
 }
+
+/* footer */
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+
+
 /* Resposive For Mobile */
 @media screen and (max-width: 576px) {
     .navbar {
@@ -427,6 +439,9 @@ img {
     }
 
     /* deal card section */
+    .deal-card-section {
+        margin-bottom: 40px;
+    }
     .deal-card-container {
         flex-direction: column;
         padding: 0px 16px;
@@ -441,6 +456,26 @@ img {
     }
     /* newsletter section */
     .news-letter  {
-        padding: 100px 36px;
+       padding: 35px 80px;
     }
+    .news-letter-title {
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .from-newsletter input[type="text"]{
+    padding: 15px 20px;
+    width: 70%;
+    border: none;
+    outline: none;
+}
+.from-newsletter input[type="submit"]{
+    padding: 15px 20px;
+    width: 20%;
+    margin-left: -5px;
+    background-color: #E95A08;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-weight: 500;
+}
 }
