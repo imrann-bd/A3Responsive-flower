@@ -293,17 +293,18 @@ img {
     margin-top: 15px;
     display: inline-block;
 }
+
 /* newsletter section */
+.newsletter-section {}
+
 .newsletter-section {
-    
-}
-.news-letter {
     background-image: linear-gradient(rgba(7, 51, 79, 0.3)), url(../assets/news-letter-bg.png);
     padding: 180px 300px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .news-letter-title {
     font-size: 2.5rem;
     font-weight: bold;
@@ -311,59 +312,70 @@ img {
     margin-bottom: 20px;
     text-align: center;
 }
-.from-newsletter {
-    text-align: center;
+
+.news-letter {
+    display: flex;
 }
-.from-newsletter input[type="text"]{
-    padding: 10px;
-    width: 70%;
+
+.email-input {
+    width: 650px;
+    height: 50px;
+    padding: 0px 10px;
     border: none;
     outline: none;
+
 }
-.from-newsletter input[type="submit"]{
-    padding: 10px;
-    width: 20%;
-    margin-left: -100px;
+
+.submit-input {
+    width: 180px;
+    height: 50px;
+    padding: 0px 10px;
+    border: none;
+    outline: none;
     background-color: #E95A08;
-    outline: none;
-    border: none;
     color: #fff;
     font-weight: 500;
 }
+
+
+
 
 /* footer */
 .footer {
     padding: 50px 0px;
 }
+
 .footer-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.footer-menu {
 
-}
+.footer-menu {}
+
 .footer-item {
     list-style: none;
 }
-.footer-link {
 
-}
+.footer-link {}
+
 .footer-links {
     text-decoration: none;
     color: rgba(0, 0, 0, 0.5);
     margin-top: 15px;
     display: block;
 }
+
 .footer-icon {
     display: flex;
     margin-top: -100px;
     display: inline-block;
     align-items: center;
 }
-.fiocn  {
+
+.fiocn {
     margin: 0px 10px;
-    
+
 }
 
 
@@ -467,55 +479,84 @@ img {
     .deal-card-section {
         margin-bottom: 40px;
     }
+
     .deal-card-container {
         flex-direction: column;
         padding: 0px 16px;
     }
+
     .dcard-title {
         font-size: 20px !important;
         font-weight: 500 !important;
     }
+
     .deal-link {
         font-size: 16px !important;
         font-weight: 500 !important;
     }
+
     /* newsletter section */
-    .news-letter  {
-       padding: 35px 80px;
+    .newsletter-section {
+        padding: 110px 36px 64px 36px;
+        
+    }
+    .news-letter {
+        display: flex;
+        justify-content: center;
     }
     .news-letter-title {
         font-weight: bold;
         font-size: 20px;
     }
-    .from-newsletter input[type="text"]{
-    padding: 10px 5px;
-    width: 70%;
-    
+
+    .email-input {
+    width: 200px;
+    height: 50px;
+    padding: 0px 10px;
+    border: none;
+    outline: none;
+
 }
-.from-newsletter input[type="submit"]{
-    padding: 10px 5px;
-    width: 30%;
-    margin-left: -5px;
-    
+
+.submit-input {
+    width:100px;
+    height: 50px;
+    padding: 0px 10px;
+    border: none;
+    outline: none;
+    background-color: #E95A08;
+    color: #fff;
+    font-weight: 500;
 }
+
 /* footer */
-.footer{
+.footer {
     width: 100%;
     padding: 40px;
 }
+
 .footer-container {
     flex-direction: column;
     align-items: flex-start;
 }
+
 .footer-icon {
     display: flex;
     margin-top: 20px;
     margin-left: -15px;
-    
-   
+
+
 }
+
 .footer-links {
-     margin-top: 32px;
-     margin-bottom: 20px;
+    margin-top: 32px;
+    margin-bottom: 20px;
 }
 }
+
+
+
+
+
+
+
