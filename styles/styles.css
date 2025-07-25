@@ -163,29 +163,137 @@ img {
     justify-content: space-between;
 }
 
-.lvoer-section-left {
-    
-}
+.lvoer-section-left {}
 
 .lvoer-section-right {
     margin: 38px 0px;
-    
+
 }
 
 .lover-list li {
     margin: 20px 0px;
 }
-.lover-img{
-   
-}
 
-.lover-badge{
+.lover-img {}
+
+.lover-badge {
     width: 250px;
     position: relative;
-    top: -700px;
-    left: 440px;
-    
+    top: -720px;
+    left: 400px;
+
 }
+
+.lover-badge {
+    animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* deal card*/
+.deal-card-section {
+    margin-bottom: 120px;
+}
+
+.deal-card-container {
+    display: flex;
+    color: #ffffff;
+    gap: 20px;
+
+}
+
+.deal-card-flex {
+    display: grid;
+    gap: 20px;
+}
+
+.dcard1 {
+    background-image: url(../assets/deal-ana.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 50px 60px;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.dcard1::before,
+.dcard2::before,
+.dcard3::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    z-index: -1;
+}
+
+.dcard2 {
+    background-image: url(../assets/deal-bloom.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 50px 60px;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.dcard3 {
+    background-image: url(../assets/deal-zabo.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 50px 60px;
+    text-align: center;
+    flex: 1;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.dcard3 h4 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.dcard3 a {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.dcard-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.deal-link {
+    font-weight: 600;
+    color: #ffffff;
+    margin-top: 15px;
+    display: inline-block;
+}
+
 /* Resposive For Mobile */
 @media screen and (max-width: 576px) {
     .navbar {
@@ -250,28 +358,49 @@ img {
         grid-template-columns: repeat(2, 1fr);
         padding: 0px 15px;
     }
-/* flower and love  */
-.flower-lover-section-container {
-    flex-direction: column;
-}
-.badge {
-    display: none;
-}
-.lvoer-section-left img{
-    width: 100%;
-}
-.flower-lover-section {
-    margin: 0;
-}
-.flower-lover-section-container{
-    margin: 40px 17px;
-}
-.lover-title {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-top: 10px;
-}
-.lvoer-section-right {
-    margin: 0px 38px;
-}
+
+    /* flower and love  */
+    .flower-lover-section-container {
+        flex-direction: column;
+    }
+
+    .badge {
+        display: none;
+    }
+
+    .lvoer-section-left img {
+        width: 100%;
+    }
+
+    .flower-lover-section {
+        margin: 0;
+    }
+
+    .flower-lover-section-container {
+        margin: 40px 17px;
+    }
+
+    .lover-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+
+    .lvoer-section-right {
+        margin: 0px 38px;
+    }
+
+    /* deal card section */
+    .deal-card-container {
+        flex-direction: column;
+        padding: 0px 16px;
+    }
+    .dcard-title {
+        font-size: 20px !important;
+        font-weight: 500 !important;
+    }
+    .deal-link {
+        font-size: 16px !important;
+        font-weight: 500 !important;
+    }
 }
